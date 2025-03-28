@@ -1,8 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Navbar from './components/Navbar'
-import CaesarCiphar from "./components/Cryptography"
+import Cryptography from './components/Cryptography'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -11,7 +9,8 @@ function App() {
     <>
       <div>
         <Navbar/>
-        <CaesarCiphar/>
+        <Cryptography/>
+        <Footer/>
       </div> 
     </>
   )
