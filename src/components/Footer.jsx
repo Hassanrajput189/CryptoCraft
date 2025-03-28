@@ -2,11 +2,13 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div id="footer" className='flex justify-center items-center py-2 absolute bottom-0 text-[#268da9] bg-gray-200 w-screen rounded-t-full'>
-      <p >
-         Hassan Rajput | All Rights Reserved.
-      </p>
-    </div>
+    <footer className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-4 fixed bottom-0 w-full">
+      <div className="container mx-auto px-6 flex justify-center items-center">
+        <p className="text-center">
+          © {new Date().getFullYear()} Hassan Rajput | All Rights Reserved
+        </p>
+      </div>
+    </footer>
   )
 }
 
