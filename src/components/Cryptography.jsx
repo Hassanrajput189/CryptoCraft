@@ -9,7 +9,8 @@ const Cryptography = () => {
   const [output, setOutput] = useState("");
 
   // 🔹 Caesar Cipher
-  function caesarCipher(str, shift, encrypt = true) {
+  
+  const caesarCipher =(str, shift, encrypt = true)=> {
     return str
       .split("")
       .map((char) => {
@@ -26,7 +27,7 @@ const Cryptography = () => {
   }
 
   // 🔹 Atbash Cipher
-  function atbashCipher(str) {
+  const atbashCipher = (str)=> {
     return str
       .split("")
       .map((char) => {
@@ -51,7 +52,7 @@ const Cryptography = () => {
     Z: "55",
   };
 
-  function polybiusEncrypt(str) {
+  const polybiusEncrypt=(str)=> {
     return str
       .toUpperCase()
       .split("")
@@ -59,7 +60,7 @@ const Cryptography = () => {
       .join(" ");
   }
 
-  function polybiusDecrypt(code) {
+  const polybiusDecrypt=(code)=> {
     const reverseSquare = Object.fromEntries(
       Object.entries(polybiusSquare).map(([key, value]) => [value, key])
     );
@@ -70,7 +71,7 @@ const Cryptography = () => {
   }
 
   // 🔹 Scytale Cipher Encryption
-  function scytaleEncrypt(str, key) {
+  const scytaleEncrypt=(str, key)=> {
     let paddedStr = str.padEnd(Math.ceil(str.length / key) * key, "X");
     let columns = Math.ceil(paddedStr.length / key);
     let encryptedText = "";
@@ -84,7 +85,7 @@ const Cryptography = () => {
   }
 
   // 🔹 Scytale Cipher Decryption
-  function scytaleDecrypt(str, key) {
+  const scytaleDecrypt=(str, key) => {
     let rows = Math.ceil(str.length / key);
     let decryptedText = new Array(str.length);
     let index = 0;

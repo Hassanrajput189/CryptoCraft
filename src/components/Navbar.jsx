@@ -12,7 +12,7 @@ const Navbar = () => {
                 </div>
 
                 <button 
-                    onClick={() => window.open('https://github.com/Hassanrajput189/CryptoCraft.git')} 
+                    onClick={() => window.open('https://github.com/Hassanrajput189/CryptoCraft')} 
                     className='text-white bg-blue-900 px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105'
                 >
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
